@@ -2,15 +2,15 @@
     <head>
         <title> Orders </title>
     </head>
+    
     <body>
         <h1>Orders:</h1>
-        {% for item in order_list %}
 
-        <h2>{{item.name}} ({{item.date}}): {{item.quantity}} x {{item.food}}, {{item.size}}</h2>
+        {% for item in order_list %}
+        <a href="/order/<index>">{{item.name}}</a>
 
         {% endfor %}
     </body>
-
 
 
 </html>
