@@ -7,7 +7,7 @@
         <h1>Orders:</h1>
 
         {% for item in order_list %}
-        <a href="/order/{{loop.index -1}}">{{item.name}}</a>
+        <a href="/order/{{order_list.index(item)}}">{{item.name}}</a>
 
         {% endfor %}
     </body>
